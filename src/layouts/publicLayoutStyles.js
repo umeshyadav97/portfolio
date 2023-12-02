@@ -8,7 +8,7 @@ export const useStyles = () => {
       margin: "16px",
       height: "96.6%",
       borderRadius: "12px",
-      background: `linear-gradient(0deg, rgba(41, 41, 41, 0.7), rgba(41, 41, 41, 0.7))`,
+      // background: `linear-gradient(0deg, rgba(41, 41, 41, 0.7), rgba(41, 41, 41, 0.7))`,
       backgroundImage: `url("/images/placeholders/onboardingng.jpg")`,
       backgroundSize: "cover"
     },

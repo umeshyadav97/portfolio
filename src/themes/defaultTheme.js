@@ -7,7 +7,7 @@ export const defaultTheme = {
         "linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(241,249,246,1) 35%, #53389E 100%)"
     },
     secondary: {
-      main: "#026AA2"
+      main: "#ffffff"
     },
     error: {
       main: "#B42318"
@@ -36,23 +36,23 @@ export const defaultTheme = {
     },
     h3: {
       fontSize: 32,
-      lineHeight: 48 / 26,
+      // lineHeight: 48 / 26,
       fontWeight: 600
     },
     h4: {
       fontSize: 28,
-      lineHeight: 40 / 24,
+      // lineHeight: 40 / 24,
       fontWeight: 500
     },
     h5: {
-      fontSize: 18,
-      lineHeight: 24 / 20,
-      fontWeight: 500
+      fontSize: 15,
+      lineHeight: 32 / 20,
+      fontWeight: 400
     },
     h6: {
-      fontSize: 14,
-      lineHeight: 24 / 18,
-      fontWeight: 500
+      fontSize: 13,
+      // lineHeight: 24 / 18,
+      fontWeight: 400
     },
     p1: {
       fontSize: 16,
@@ -77,7 +77,7 @@ export const defaultTheme = {
       fontWeight: 500
     },
     c2: {
-      fontSize: 12,
+      fontSize: 16,
       lineHeight: 17 / 12,
       fontWeight: 600
     },
