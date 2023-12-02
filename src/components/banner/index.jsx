@@ -1,6 +1,5 @@
 import { Typography, useMediaQuery } from "@mui/material"
 import React, { useEffect } from "react"
-import { useTheme } from "@mui/system"
 import SectionContainer from "../sectionContainer/index"
 
 const useStyles = () => {
@@ -21,10 +20,10 @@ const useStyles = () => {
 }
 
 function Banner() {
-  const theme = useTheme()
+  // const theme = useTheme()
   const styles = useStyles()
   return (
-    <div style={{ background: theme.palette.primary.mainGradient, marginTop: "-64px" }}>
+    <div>
       <SectionContainer sx={{ paddingTop: "64px", height: "80vh" }}>
         <div style={styles.headingBanner}>
           <div>

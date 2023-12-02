@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton"
 import Typography from "@mui/material/Typography"
 import MenuIcon from "@mui/icons-material/Menu"
 import Container from "@mui/material/Container"
-import Button from "@mui/material/Button"
+// import Button from "@mui/material/Button"
 import AdbIcon from "@mui/icons-material/Adb"
 import Drawer from "@mui/material/Drawer"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
@@ -29,6 +29,11 @@ const pages = [
     link: "/about"
   },
   {
+    name: "Projects",
+    link: "/projects"
+  },
+
+  {
     name: "Contact Us",
     link: "/contact"
   }
@@ -37,21 +42,13 @@ const pages = [
 const drawerWidth = 240
 
 function NavBar() {
-  const {
-    open,
-    theme,
-    classes,
-    handleDrawerOpen,
-    handleDrawerClose,
-    navRef,
-    navBackground,
-    isLoggedIn,
-    navigate,
-    logout
-  } = useNavbarController()
+  const { open, theme, classes, handleDrawerOpen, handleDrawerClose, navRef } =
+    useNavbarController()
 
   return (
-    <AppBar sx={classes[navRef.current]} position="fixed">
+    <AppBar
+      sx={(classes[navRef.current], { borderBottom: "1px solid #EAECF0", background: "#ffffff" })}
+      position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon
@@ -71,7 +68,7 @@ function NavBar() {
               color: theme.palette.primary.main,
               textDecoration: "none"
             }}>
-            LOGO
+            umesh.dev
           </Typography>
 
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -136,9 +133,10 @@ function NavBar() {
               color: theme.palette.primary.main,
               textDecoration: "none"
             }}>
-            LOGO
+            umesh.dev
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: "flex-end" }}>
             <List style={{ my: 2, color: theme.palette.primary.main, display: "flex" }}>
               {pages.map((page, idx) => (
                 <ListItem key={idx} sx={{ width: "auto" }}>
@@ -150,7 +148,7 @@ function NavBar() {
             </List>
           </Box>
 
-          {!isLoggedIn && (
+          {/* {!isLoggedIn && (
             <>
               <Button
                 color="primary"
@@ -174,9 +172,9 @@ function NavBar() {
                 Sign Up
               </Button>
             </>
-          )}
+          )} */}
 
-          {isLoggedIn && (
+          {/* {isLoggedIn && (
             <Button
               color="primary"
               onClick={logout}
@@ -188,7 +186,7 @@ function NavBar() {
               }}>
               Logout
             </Button>
-          )}
+          )} */}
         </Toolbar>
       </Container>
     </AppBar>

@@ -2,7 +2,7 @@ import React from "react"
 import { Box, Grid } from "@mui/material"
 import { useStyles } from "./commonLayoutStyles"
 import NavBar from "@local/components/navBar"
-import Footer from "@local/components/footer"
+// import Footer from "@local/components/footer"
 
 function CommonLayout({ children }) {
   const styles = useStyles()
@@ -21,7 +21,7 @@ function CommonLayout({ children }) {
           </Grid>
         }
       </Grid>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </Box>
   )
 }
