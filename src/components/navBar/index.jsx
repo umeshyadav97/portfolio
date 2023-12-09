@@ -34,7 +34,7 @@ const pages = [
   },
 
   {
-    name: "Contact Us",
+    name: "Contact",
     link: "/contact"
   }
 ]
