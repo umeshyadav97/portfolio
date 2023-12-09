@@ -54,6 +54,11 @@ export const defaultTheme = {
       // lineHeight: 24 / 18,
       fontWeight: 400
     },
+    h7: {
+      fontSize: 34,
+      // lineHeight: 24 / 18,
+      fontWeight: 500
+    },
     p1: {
       fontSize: 16,
       lineHeight: 24 / 15,

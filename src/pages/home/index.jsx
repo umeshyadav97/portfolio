@@ -1,77 +1,91 @@
 import React from "react"
 import Head from "next/head"
 import { getServerSideProps } from "./home.server"
-import { Divider, Grid, Typography } from "@mui/material"
+import { Box, Divider, Typography } from "@mui/material"
 import Image from "next/image"
-import Mockup from "../../../public/images/icons/mockup.png"
+import Profile from "@local/assets/images/backgrounds/myprofile.jpg"
 import Linkdien from "@local/assets/images/icons/linkdien.svg"
 import Github from "@local/assets/images/icons/github.svg"
 import { useHomeController } from "./home.controller"
+import { keyframes } from "@emotion/react"
 
 function Home() {
   const { techStackList } = useHomeController()
+  const rotateAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`
   return (
     <React.Fragment>
       <Head>
         <title>Home</title>
       </Head>
-      <Grid
-        item
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        style={{ height: "90vh" }}>
-        <Grid container spacing={6} xs={12} md={6} justifyContent="center" alignItems="center">
-          <Grid item>
-            <Grid item>
+
+      <Box display="flex" justifyContent="center" alignItems="center" style={{ height: "90vh" }}>
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <Box xs={6}>
+            <Box>
               <Typography variant="h3" component="div">
                 Front-End React
                 <br />
                 Developer
               </Typography>
-            </Grid>
-            <Grid item pt={2}>
-              <Typography variant="h6">
-                Hi, I am Umesh Yadav .A passionate Front-end React and
+            </Box>
+            <Box pt={2}>
+              <Typography variant="h5">
+                Hi, I am Umesh Yadav. A passionate Front-end React and
                 <br />
                 Next Developer based in Varanasi India
               </Typography>
-            </Grid>
-            <Grid container spacing={2} py={2} alignItems="center">
-              <Grid item>
-                {" "}
+            </Box>
+            <Box container spacing={2} py={2} display="flex" alignItems="center">
+              <Box item>
                 <Image src={Linkdien} width={30} height={30} alt="img" />
-              </Grid>
-              <Grid item>
-                {" "}
+              </Box>
+              <Box item>
                 <Image src={Github} width={25} height={25} alt="img" />
-              </Grid>
-            </Grid>
-            <Grid container pt={15}>
-              <Grid item pr={2}>
+              </Box>
+            </Box>
+            <Box container pt={10} display="flex">
+              <Box item pr={2}>
                 <Typography>Tech Stack</Typography>
-              </Grid>
+              </Box>
               <Divider
                 orientation="vertical"
                 flexItem
                 style={{ width: "1px ", background: "black", height: "25px" }}
               />
-              <Grid item>
-                <Grid container spacing={4} pl={4}>
-                  {techStackList.map((item, index) => (
-                    <Grid item key={index}>
-                      <Image src={item.src} width={30} height={30} />
-                    </Grid>
-                  ))}
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item>
-            <Image src={Mockup} width={100} height={100} alt="img" />
-          </Grid>
-        </Grid>
-      </Grid>
+              <Box item display="flex" pl={2}>
+                {techStackList.map((item, index) => (
+                  <Box item key={index} mr={2}>
+                    <Image src={item.src} width={30} height={30} alt="tech" />
+                  </Box>
+                ))}
+              </Box>
+            </Box>
+          </Box>
+          <Box xs={6} style={{ position: "relative", overflow: "hidden" }}>
+            {/* Assuming 'Image' is your custom image component */}
+            <Image
+              src={Profile}
+              width={200}
+              height={200}
+              alt="img"
+              style={{
+                borderRadius: "50%",
+                animation: `${rotateAnimation} 4s infinite`
+              }}
+            />
+          </Box>
+        </Box>
+      </Box>
     </React.Fragment>
   )
 }
