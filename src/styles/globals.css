@@ -14,3 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6941c6;
+  border-radius: 5px;
+}

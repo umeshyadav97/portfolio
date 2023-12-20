@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Grid, Typography } from "@mui/material"
 import Head from "next/head"
 import Image from "next/image"
-import Background from "@local/assets/images/backgrounds/image.png"
+import Background from "@local/assets/images/backgrounds/about-me.svg"
 import { useTheme } from "@mui/system"
 
 function About() {
@@ -53,16 +53,11 @@ function About() {
                 delivering exceptional results. I pride myself on my ability to take ownership of
                 projects, work collaboratively, and drive innovation. In my previous roles, I have
                 contributed to the development of cutting-edge web applications that have positively
-                impacted user experiences and business outcomes. I have also actively participated
-                in the entire software development life cycle, from conceptualization to deployment
-                and ongoing maintenance. This holistic approach has given me insights into how each
+                impacted user experiences and business outcomes.This holistic approach has given me insights into how each
                 piece of code contributes to the bigger picture and helps achieve business goals.In
                 addition to my technical skills, I possess excellent communication and interpersonal
                 skills. I believe that clear and effective communication is crucial for successful
-                collaboration with cross-functional teams, stakeholders, and clients. I am also
-                adept at understanding and translating business requirements into technical
-                solutions, allowing me to bridge the gap between technical and non-technical team
-                members.
+                collaboration with cross-functional teams, stakeholders, and clients. 
               </Typography>
             </Grid>
           </Grid>

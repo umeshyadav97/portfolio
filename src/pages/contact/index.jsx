@@ -20,8 +20,8 @@ function Contact() {
       </Head>
       <Container sx={{ p: 4, background: "#f1f3f4", height: "91vh" }} maxWidth="xl">
         <Grid item>
-          <Grid container justifyContent="center">
-            <Typography variant="h7">Contact Me</Typography>
+          <Grid container>
+            <Typography variant="h7">Lets Get in Touch: Ways to Connect with Me</Typography>
           </Grid>
           <Grid container pt={8} justifyContent="center">
             <Paper
