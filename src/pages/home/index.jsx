@@ -22,6 +22,8 @@ function Home() {
     transform: rotate(360deg);
   }
 `
+  const Linkedin = "https://www.linkedin.com/in/umeshyadav97"
+  const Git = "https://github.com/umeshyadav97"
   return (
     <React.Fragment>
       <Head>
@@ -47,10 +49,14 @@ function Home() {
             </Box>
             <Box container spacing={2} py={2} display="flex" alignItems="center">
               <Box item>
-                <Image src={Linkdien} width={30} height={30} alt="img" />
+                <a href={Linkedin} target="_blank" rel="noopener noreferrer">
+                  <Image src={Linkdien} width={30} height={30} alt="img" />
+                </a>
               </Box>
               <Box item>
-                <Image src={Github} width={25} height={25} alt="img" />
+                <a href={Git} target="_blank" rel="noopener noreferrer">
+                  <Image src={Github} width={25} height={25} alt="img" />
+                </a>
               </Box>
             </Box>
             <Box container pt={10} display="flex">
