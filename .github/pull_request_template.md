@@ -23,4 +23,4 @@ Please delete options that are not relevant.
 
 ## Screenshots (for ui related updates)
 
-## Submit your review: https://forms.office.com/r/NVDpWPxxQm
+
