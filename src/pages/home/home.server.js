@@ -1,5 +1,4 @@
-export async function getServerSideProps(ctx) {
-  console.log(ctx)
+export async function getServerSideProps() {
   return {
     props: {}
   }

@@ -6,8 +6,6 @@ export const CookieKeys = {
   REFRESH_TOKEN: "Refresh-Token"
 }
 
-console.log(process.env.APP_ENV, process.env.APP_ENV)
-
 export const CookieOptions = {
   expires: Dates().addInCurrent(10, "days")._d,
   sameSite: "strict",
