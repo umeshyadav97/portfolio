@@ -48,10 +48,10 @@ This boilerplate is created in the interest of developers to make the basic deve
 
 ```
 📦project
- ┣ 📂.husky
- ┃ ┣ 📂_
- ┃ ┃ ┣ 📜.gitignore
- ┃ ┃ ┗ 📜husky.sh
+ ┣ 📂
+ ┃ ┣
+ ┃ ┃  
+ ┃ ┃ 
  ┃ ┗ 📜pre-commit
  ┣ 📂.vscode
  ┃ ┗ 📜settings.json

@@ -57,7 +57,6 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.1",
-    "husky": "^8.0.0",
     "prettier": "^2.8.3"
   }
 }
