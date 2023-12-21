@@ -78,7 +78,6 @@ function Home() {
             </Box>
           </Box>
           <Box xs={6} style={{ position: "relative", overflow: "hidden" }}>
-            {/* Assuming 'Image' is your custom image component */}
             <Image
               src={Profile}
               width={200}
