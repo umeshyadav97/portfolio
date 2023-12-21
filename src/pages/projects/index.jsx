@@ -7,7 +7,7 @@ import { useProjectController } from "./project.controller"
 
 function Projects() {
   const { projectDeatils } = useProjectController()
-  console.log(projectDeatils)
+
   return (
     <React.Fragment>
       <Head>
