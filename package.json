@@ -19,7 +19,7 @@
     "prettier:write": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\" --loglevel error",
     "lint": "next lint",
     "prepare": "husky install",
-    "vercel-build": "export APP_ENV=dev && next build"
+    "vercel-build": "SET APP_ENV=dev && next build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
