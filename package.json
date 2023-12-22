@@ -1,5 +1,5 @@
 {
-  "name": "strope-ai-frontend",
+  "name": "portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -29,6 +29,7 @@
     "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.3.5",
     "formik": "^2.2.9",
+    "husky": "^8.0.3",
     "lottie-react": "^2.4.0",
     "moment": "^2.29.4",
     "next": "^13.1.3",

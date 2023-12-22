@@ -3,7 +3,6 @@ import Head from "next/head"
 import { getServerSideProps } from "./home.server"
 import { Box, Divider, Typography } from "@mui/material"
 import Image from "next/image"
-import Profile from "@local/assets/images/backgrounds/myprofile.jpg"
 import Linkdien from "@local/assets/images/icons/linkdien.svg"
 import Github from "@local/assets/images/icons/github.svg"
 import { useHomeController } from "./home.controller"
@@ -79,9 +78,10 @@ function Home() {
           </Box>
           <Box xs={6} style={{ position: "relative", overflow: "hidden" }}>
             <Image
-              src={Profile}
-              width={200}
-              height={200}
+              src="/_next/static/media/profile-1.2359b116.png"
+              width={330}
+              height={330}
+              priority
               alt="img"
               style={{
                 borderRadius: "50%",

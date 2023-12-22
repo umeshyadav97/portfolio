@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Grid, Typography } from "@mui/material"
 import Head from "next/head"
 import Image from "next/image"
-import Background from "@local/assets/images/backgrounds/about-me.svg"
+// import Background from "@local/assets/images/backgrounds/about-me.svg"
 import { useTheme } from "@mui/system"
 
 function About() {
@@ -19,7 +19,8 @@ function About() {
             <Grid item>
               {" "}
               <Image
-                src={Background}
+                // src={Background}
+                src="/_next/static/media/about-me.6644cb4b.svg"
                 width={520}
                 height={520}
                 alt="img"
@@ -53,11 +54,12 @@ function About() {
                 delivering exceptional results. I pride myself on my ability to take ownership of
                 projects, work collaboratively, and drive innovation. In my previous roles, I have
                 contributed to the development of cutting-edge web applications that have positively
-                impacted user experiences and business outcomes.This holistic approach has given me insights into how each
-                piece of code contributes to the bigger picture and helps achieve business goals.In
-                addition to my technical skills, I possess excellent communication and interpersonal
-                skills. I believe that clear and effective communication is crucial for successful
-                collaboration with cross-functional teams, stakeholders, and clients. 
+                impacted user experiences and business outcomes.This holistic approach has given me
+                insights into how each piece of code contributes to the bigger picture and helps
+                achieve business goals.In addition to my technical skills, I possess excellent
+                communication and interpersonal skills. I believe that clear and effective
+                communication is crucial for successful collaboration with cross-functional teams,
+                stakeholders, and clients.
               </Typography>
             </Grid>
           </Grid>
