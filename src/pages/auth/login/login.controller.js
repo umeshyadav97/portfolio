@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useLoginModel } from "./login.model"
 import { useRouter } from "next/router"
 
-export const useLoginController = () => {
+export function useLoginController() {
   const [showPassword, setShowPassword] = useState(false)
   const [showLoader, setShowLoader] = useState(false)
 

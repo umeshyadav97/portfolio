@@ -8,7 +8,7 @@
     "qa": "APP_ENV=qa next dev",
     "qa:win": "SET APP_ENV=qa next dev",
     "staging": "APP_ENV=staging next dev",
-    "build:dev": "APP_ENV=dev next build",
+    "build:dev": "SET APP_ENV=dev && next build",
     "build:qa": "APP_ENV=qa next build",
     "build:staging": "APP_ENV=staging next build",
     "build:prod": "APP_ENV=prod next build",

@@ -1,7 +1,7 @@
 import { useUserSession } from "@local/hooks/userSession"
 import { NetworkManager, API } from "@local/network/core"
 
-export const useLoginModel = () => {
+export function useLoginModel() {
   const userSession = useUserSession()
 
   const loginByEmail = async (values) => {
