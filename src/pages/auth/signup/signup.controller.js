@@ -4,7 +4,7 @@ import UserImg from "@local/assets/images/backgrounds/DefaultImg.png"
 import { useUserSession } from "@local/hooks/userSession"
 import { useRouter } from "next/router"
 
-export const useSignupController = () => {
+export function useSignupController() {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setshowConfirmPassword] = useState(false)
   const [showLoader, setShowLoader] = useState(false)

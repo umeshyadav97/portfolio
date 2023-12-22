@@ -2,7 +2,7 @@ import { useRef, useState } from "react"
 import { useResetPasswordModel } from "./reset-password.model"
 import { useRouter } from "next/router"
 
-export const useResetPasswordController = () => {
+export function useResetPasswordController() {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setshowConfirmPassword] = useState(false)
   const [showLoader, setShowLoader] = useState(false)

@@ -1,6 +1,6 @@
 import { useTheme } from "@mui/system"
 
-export const useStyles = () => {
+export function useStyles() {
   const theme = useTheme()
   return {
     container: {
