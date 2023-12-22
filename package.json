@@ -18,8 +18,7 @@
     "serve:prod": "next start -p 3004",
     "prettier:write": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\" --loglevel error",
     "lint": "next lint",
-    "prepare": "husky install",
-    "vercel-build": "APP_ENV=dev && next build"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
